@@ -18,6 +18,7 @@ export const getUserData = async (
   }));
 
   return users.find(
-    (user) => user.email === email
-  );
+  (user: any) =>
+    user.email === email
+);
 };

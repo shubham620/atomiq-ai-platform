@@ -62,9 +62,11 @@ export const AuthProvider = ({
           const profileData =
             await getUserData(user.email);
 
-          setProfile(
-            profileData as UserProfile
-          );
+          if (profileData) {
+  setProfile(
+    profileData as unknown as UserProfile
+  );
+}
         }
 
         setLoading(false);

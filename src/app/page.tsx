@@ -20,12 +20,7 @@ export default function Home() {
             Login
           </Link>
 
-          <Link
-            href="/dashboard"
-            className="rounded-2xl border border-zinc-700 px-8 py-4 font-semibold text-white transition hover:bg-zinc-900"
-          >
-            Dashboard
-          </Link>
+         
         </div>
       </div>
     </main>
